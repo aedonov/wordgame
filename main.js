@@ -141,7 +141,7 @@ function letterCheck(letterInput){
                 victory();
             } else {
                 loser();
-                break;
+            break;
             }
         } else if (match[i +increaseI] === false) {
             if (word.includes(string[i])) {

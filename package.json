@@ -17,7 +17,7 @@
   },
   "build":{
     "productName": "Word Game",
-    "executableName": "adonos-word-game.exe",
+    "executableName": "Adonos-Word-Game",
     "icon": "icon.ico"
   },
   "win":{
