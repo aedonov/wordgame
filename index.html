@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Liter&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Game</title>
+</head>
+<body>
+    <div id="frame">
+        <div id="title-bar-buttons">
+            <div id="windowControls">
+                <button id="minimizeb"></button>
+                <button id="maximizeb"></button>
+                <button id="closeb"></button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <h1 id="title"> Word Game</h1>
+    <button id="start" onclick="reset()"> PLAY AGAIN</button>
+    <div id ='grid' class="grid">
+        <div id="b1" class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id="b2" class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b3' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id="b4" class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id="b5" class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id="b6" class = 'box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b7' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id="b8" class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b9' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b10' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b11' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b12' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b13' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b14' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b15' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b16' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b17' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b18' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b19' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b20' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b21' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b22' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b23' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b24' class ='box'><input type="text" maxlength="1" class="guess"></div>
+        <div id='b25' class ='box'><input type="text" maxlength="1" class="guess"></div>
+    </div>
+    <div id = 'popup'>
+        <p>You won! <br>
+        Thank you for playing my game! <br><br>
+        Click  ' <p1 id = 'makeRed'>X</p1> '  to start a new game <br><br>
+        Minimize to gaze upon your victory
+        </p>
+        <div id = 'winBar'>
+        <button id = 'x' onclick = "reset()" >X</button>
+        <button id = 'min' onclick="minimize()">M</button>
+        </div>
+    </div>
+    <div id = 'lose'>
+        <p id = 'loseText'>You lost! :( <br>
+        Thank you for playing my game! <br><br>
+        Click  ' <p1 id = 'makeRed'>X</p1> '  to start a new game <br><br>
+        Your word was: 
+        </p>
+        <div id = 'winBar'>
+        <button id = 'x' onclick = "reset()" >X</button>
+        <button id = 'min' onclick="minimize()">M</button>
+        </div>
+    </div>
+    <div id ='con_con'>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+        <div class = 'confetti'></div>
+    </div>
+    <div id = 'noti'></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+

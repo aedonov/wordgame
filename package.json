@@ -1,0 +1,39 @@
+{
+  "name": "adonos-word-game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "builder": "^5.0.0",
+    "electron": "^34.0.2",
+    "electron-builder": "^25.1.8"
+  },
+  "build":{
+    "productName": "Word Game",
+    "executableName": "adonos-word-game.exe",
+    "icon": "icon.ico"
+  },
+  "win":{
+    "target": "nsis",  
+    "icon": "path/to/icon.ico"
+  },
+  "nsis": {
+  "oneClick": false,
+  "allowToChangeInstallationDirectory": true, 
+  "perMachine": true,
+  "installDirectory": "C:\\Program Files\\adonos-word-game",
+  "createDesktopShortcut": true,
+  "shortcutName": "Adonos Word Game",
+  "installerIcon": "icon.ico",
+  "uninstallerIcon": "icon.ico",
+  "uninstallDisplayName": "Adonos Word Game",
+  "runAfterFinish": true
+  }
+}
