@@ -7,7 +7,7 @@
     "build": "electron-builder"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aedan Donovan",
   "license": "ISC",
   "description": "",
   "devDependencies": {
