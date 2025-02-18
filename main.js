@@ -140,7 +140,8 @@ function letterCheck(letterInput){
             if (match.every(Boolean)){
                 victory();
             } else {
-            loser();
+                loser();
+                break;
             }
         } else if (match[i +increaseI] === false) {
             if (word.includes(string[i])) {
@@ -219,7 +220,8 @@ function loser(){
     blurBackground();
     let pop = document.getElementById('lose')
     let loseText = document.getElementById('loseText');
-    loseText.innerHTML += randomWord
+    console.log(randomWord);
+    loseText.innerHTML += randomWord;
     console.log(randomWord);
     pop.style.display = 'block';
 }
