@@ -26,9 +26,6 @@ fetch('words.json')
         const words = data.words;
         const randomInt = Math.floor(Math.random() * 500);
         randomWord = words[randomInt];
-        for (var i = 0; i < 9; i++){
-            console.log(randomWord);
-        }
     })
 }
 window.onload = function(){
@@ -96,9 +93,6 @@ function submit(){
         if (row < 5){
         guess[currentFocus +1].focus();
         }
-        if (row >= 5){
-            loser();
-        }
     } else if (validWord === 0){
         notification();
     }
@@ -128,7 +122,7 @@ function letterCheck(letterInput){
     }
     for (let i= 0; i < 5; i++){
         if (match[i + increaseI] === true){
-            if (match.every(Boolean)){
+            if (match.every(Boolean) && row <= 5){
                 console.log('victory');
                 letterInput[i + increaseI].style.backgroundColor = "green";
                 boxes[i + increaseI].style.backgroundColor = 'green';
@@ -141,6 +135,13 @@ function letterCheck(letterInput){
             letterInput[i +increaseI].style.backgroundColor = "green";
             boxes[i + increaseI].style.backgroundColor = 'green';
             }
+        } else if (row === 4){
+            console.log("loser check");
+            if (match.every(Boolean)){
+                victory();
+            } else {
+            loser();
+            }
         } else if (match[i +increaseI] === false) {
             if (word.includes(string[i])) {
                 letterInput[i + increaseI].style.backgroundColor = 'yellow';
@@ -149,7 +150,7 @@ function letterCheck(letterInput){
                 letterInput[i + increaseI].style.backgroundColor = 'red';
                 boxes[i + increaseI].style.backgroundColor = 'red';
             }
-    }
+        } 
 } 
         console.log(word);
         console.log(string)
