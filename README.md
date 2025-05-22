@@ -10,4 +10,5 @@ To build exe on Windows and run the app
 3. npm run build       OR       npm start
 **run .exe installer
 
+![alt text](https://github.com/aedonov/wordgame/blob/main/example.png?raw=true)
 
